@@ -14,18 +14,21 @@
 </head>
 
 <body>
-  <nav id="navbar">
-    <header id="nav-header">Incident Response Documentation</header>
-    <a class="nav-link" href="#introduction">Introduction</a>
-    <a class="nav-link" href="#preparation_phase">Preparation Phase</a>
-    <a class="nav-link" href="#identification_and_detection">Identification and Detection</a>
-    <a class="nav-link" href="#containment_strategies">Containment Strategies</a>
-    <a class="nav-link" href="#eradication_and_elimination">Eradication and Elimination</a>
-    <a class="nav-link" href="#recovery_and_restoration">Recovery and Restoration</a>
-    <a class="nav-link" href="#post-incident_analysis">Post-Incident Analysis</a>
-    <a class="nav-link" href="#communication_and_reporting">Communication and Reporting</a>
-    <a class="nav-link last-nav-link" href="#continuous_improvement_and_prevention">Continuous Improvement and Prevention</a>
-  </nav>
+  <div id="nav-container">
+    <nav id="navbar">
+      <header id="nav-header">Incident Response Documentation</header>
+      <a class="nav-link" href="#introduction">Introduction</a>
+      <a class="nav-link" href="#preparation_phase">Preparation Phase</a>
+      <a class="nav-link" href="#identification_and_detection">Identification and Detection</a>
+      <a class="nav-link" href="#containment_strategies">Containment Strategies</a>
+      <a class="nav-link" href="#eradication_and_elimination">Eradication and Elimination</a>
+      <a class="nav-link" href="#recovery_and_restoration">Recovery and Restoration</a>
+      <a class="nav-link" href="#post-incident_analysis">Post-Incident Analysis</a>
+      <a class="nav-link" href="#communication_and_reporting">Communication and Reporting</a>
+      <a class="nav-link last-nav-link" href="#continuous_improvement_and_prevention">Continuous Improvement and
+        Prevention</a>
+    </nav>
+  </div>
   <main id="main-doc">
 
     <section class="main-section first-main-section" id="introduction">
@@ -212,7 +215,11 @@
       <header class="main-section-header">Recovery and Restoration</header>
 
       <p class="main-section-para">
-        Recovery is where systems begin their cautious return to normal. After eradicating the threat, teams must carefully bring services, databases, and applications back online without reintroducing vulnerabilities. Restoring too quickly can undo hours of work if remnants of the attack still lurk in backups or configurations. The priority is stability over speed—every restored system must be verified, patched, and monitored like a newborn server.
+        Recovery is where systems begin their cautious return to normal. After eradicating the threat, teams must
+        carefully bring services, databases, and applications back online without reintroducing vulnerabilities.
+        Restoring too quickly can undo hours of work if remnants of the attack still lurk in backups or configurations.
+        The priority is stability over speed—every restored system must be verified, patched, and monitored like a
+        newborn server.
       </p>
 
       <div class="code-container">
@@ -230,7 +237,10 @@
       </div>
 
       <p class="main-section-para">
-        Once systems are restored, continuous monitoring must follow for hours or even days. Logs should be reviewed in real time, looking for any signs that the attacker is attempting to regain access. Teams also validate the integrity of restored data and test every critical function before declaring full recovery. The recovery phase isn&apos;t the finish line—it&apos;s the checkpoint before trust in the system can be rebuilt.
+        Once systems are restored, continuous monitoring must follow for hours or even days. Logs should be reviewed in
+        real time, looking for any signs that the attacker is attempting to regain access. Teams also validate the
+        integrity of restored data and test every critical function before declaring full recovery. The recovery phase
+        isn&apos;t the finish line—it&apos;s the checkpoint before trust in the system can be rebuilt.
       </p>
 
     </section>
@@ -240,7 +250,10 @@
       <header class="main-section-header">Post-Incident Analysis</header>
 
       <p class="main-section-para">
-        Once the smoke clears, the real detective work begins. Post-incident analysis is where responders dissect every second of the event—what triggered it, how it spread, what was missed, and how the team reacted. The goal isn&apos;t blame; it&apos;s understanding. A security incident that isn&apos;t analyzed is just an expensive mystery waiting to happen again. This phase transforms chaos into documentation and failure into strategy.
+        Once the smoke clears, the real detective work begins. Post-incident analysis is where responders dissect every
+        second of the event—what triggered it, how it spread, what was missed, and how the team reacted. The goal
+        isn&apos;t blame; it&apos;s understanding. A security incident that isn&apos;t analyzed is just an expensive
+        mystery waiting to happen again. This phase transforms chaos into documentation and failure into strategy.
       </p>
 
       <div class="code-container">
@@ -254,7 +267,10 @@
       </div>
 
       <p class="main-section-para">
-        The findings from post-incident analysis feed directly into policy updates and prevention mechanisms. Teams should hold a “post-mortem” meeting to discuss timeline accuracy, communication breakdowns, and detection delays. Every insight helps refine tools and procedures, making the next response faster and more accurate. Transparency here is crucial—no cover-ups, no shortcuts, just learning.
+        The findings from post-incident analysis feed directly into policy updates and prevention mechanisms. Teams
+        should hold a “post-mortem” meeting to discuss timeline accuracy, communication breakdowns, and detection
+        delays. Every insight helps refine tools and procedures, making the next response faster and more accurate.
+        Transparency here is crucial—no cover-ups, no shortcuts, just learning.
       </p>
 
     </section>
@@ -264,7 +280,10 @@
       <header class="main-section-header">Communication and Reporting</header>
 
       <p class="main-section-para">
-        During and after an incident, communication can make or break the response effort. Confusion spreads faster than malware when teams don&apos;t know who&apos;s in charge or what&apos;s happening. A clear reporting structure keeps everyone aligned—from technical responders to management and external partners. Communication must be timely, accurate, and verified; bad information can cause more panic than the incident itself.
+        During and after an incident, communication can make or break the response effort. Confusion spreads faster than
+        malware when teams don&apos;t know who&apos;s in charge or what&apos;s happening. A clear reporting structure
+        keeps everyone aligned—from technical responders to management and external partners. Communication must be
+        timely, accurate, and verified; bad information can cause more panic than the incident itself.
       </p>
 
       <div class="code-container">
@@ -283,7 +302,10 @@
       </div>
 
       <p class="main-section-para">
-        Incident reporting isn&apos;t just internal paperwork—it&apos;s a record of accountability. Well-structured reports include detection time, systems affected, actions taken, and recovery status. They become both a reference for future training and evidence for compliance requirements. Clarity and completeness matter more than fancy formatting; a one-page honest report beats a twenty-page fluff document every time.
+        Incident reporting isn&apos;t just internal paperwork—it&apos;s a record of accountability. Well-structured
+        reports include detection time, systems affected, actions taken, and recovery status. They become both a
+        reference for future training and evidence for compliance requirements. Clarity and completeness matter more
+        than fancy formatting; a one-page honest report beats a twenty-page fluff document every time.
       </p>
 
     </section>
@@ -293,7 +315,10 @@
       <header class="main-section-header">Continuous Improvement and Prevention</header>
 
       <p class="main-section-para">
-        Incident response doesn&apos;t end when systems are back online—it evolves. Continuous improvement means taking everything learned from past incidents and using it to strengthen defenses, update tools, and refine policies. Threats change, technologies age, and yesterday&apos;s secure system can become tomorrow&apos;s weak point. True resilience comes from accepting that no network is ever “fully safe,” only better prepared than before.
+        Incident response doesn&apos;t end when systems are back online—it evolves. Continuous improvement means taking
+        everything learned from past incidents and using it to strengthen defenses, update tools, and refine policies.
+        Threats change, technologies age, and yesterday&apos;s secure system can become tomorrow&apos;s weak point. True
+        resilience comes from accepting that no network is ever “fully safe,” only better prepared than before.
       </p>
 
       <div class="code-container">
@@ -309,11 +334,19 @@
       </div>
 
       <p class="main-section-para">
-        Preventive strategies should become part of daily operations, not occasional checklists. Automated patching, employee training, and regular vulnerability assessments build a culture of readiness. Continuous improvement isn&apos;t about perfection, it&apos;s about momentum. Every improvement, no matter how small, widens the gap between attackers and your defenses, keeping your systems one step ahead in a game that never really ends.
+        Preventive strategies should become part of daily operations, not occasional checklists. Automated patching,
+        employee training, and regular vulnerability assessments build a culture of readiness. Continuous improvement
+        isn&apos;t about perfection, it&apos;s about momentum. Every improvement, no matter how small, widens the gap
+        between attackers and your defenses, keeping your systems one step ahead in a game that never really ends.
       </p>
 
     </section>
 
+    <div id="back-to-top container">
+      <a href="#nav-container" class="back-to-top-link">
+        <img src="back-to-top.svg" alt="Back to Top" id="back-to-top">
+      </a>
+    </div>
   </main>
 </body>
 
